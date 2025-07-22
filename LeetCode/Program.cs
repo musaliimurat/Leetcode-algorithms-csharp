@@ -15,6 +15,15 @@
 
 //Console.WriteLine(string.Join(",", result2));
 
-bool result = ValidParentheses.IsValidSolution("()[]{]");
+//bool result = ValidParentheses.IsValidSolution("()[]{]");
 
-Console.WriteLine(result);
+//Console.WriteLine(result);
+
+string[] strings = { "eat", "tea", "tan", "ate", "nat", "bat" };
+
+IList<IList<string>> anagrams = GroupAnagram.GroupAnagrams(strings);
+
+foreach (var group in anagrams)
+{
+    Console.WriteLine("[ " + string.Join(", ", group) + " ]");
+}

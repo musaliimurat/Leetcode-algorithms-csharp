@@ -9,10 +9,10 @@
 
             for (int i = 0; i < nums.Length; i++)
             {
-                var myKey = target - nums[i];
-                if (map.ContainsKey(myKey))
+                var value = target - nums[i];
+                if (map.ContainsKey(value))
                 {
-                    return [map[myKey], i];
+                    return [map[value], i];
                 }
                 if (!map.ContainsKey(nums[i]))
                 {
